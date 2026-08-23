@@ -1,46 +1,19 @@
-<div align="center">
 
-## 🤖 mechabar
+## Waybar config
 
-A customizable, modular Waybar configuration
+My config is almost a copy-paste of the [mechabar](https://github.com/Sejjy/MechaBar) repository, make sure to check it if you are encounetering any issues !\
+It also is a lot more neutral, and has more stuff right of the bat, with more explanations as well.
 
-| ![Preview](./assets/catppuccin-mocha.png) |
+# Preview 
+| ![Preview](./assets/noobarch.png.png) |
 | :---------------------------------------: |
-
-<details>
-<summary>Themes</summary>
-
-| Catppuccin Mocha (default)                         |
-| :------------------------------------------------: |
-| ![Catppuccin Mocha](./assets/catppuccin-mocha.png) |
-
-| Catppuccin Macchiato                                       |
-| :--------------------------------------------------------: |
-| ![Catppuccin Macchiato](./assets/catppuccin-macchiato.png) |
-
-| Catppuccin Frappe                                    |
-| :--------------------------------------------------: |
-| ![Catppuccin Frappe](./assets/catppuccin-frappe.png) |
-
-| Catppuccin Latte                                   |
-| :------------------------------------------------: |
-| ![Catppuccin Latte](./assets/catppuccin-latte.png) |
-
-</details>
-</div>
-
-#
 
 ### Requirements
 
-1. [waybar](https://archlinux.org/packages/extra/x86_64/waybar/)
-
-2. A terminal emulator (default: [kitty](https://archlinux.org/packages/extra/x86_64/kitty/))
-	> If you use a different terminal emulator, see the [Configuration](#configuration) section below.
-
-#
+The only difference with the original regarding this part is that I swapped all occurences of kitty with Ghostty, [as per the original README explained](#configuration).
 
 ### Installation
+(Section taken from the original README)
 
 1. Back up your current Waybar configuration:
 
@@ -51,7 +24,7 @@ A customizable, modular Waybar configuration
 2. Clone the repository:
 
 	```bash
-	git clone https://github.com/sejjy/mechabar.git ~/.config/waybar
+	git clone https://github.com/NoobArch/Waybar.git ~/.config/waybar
 	```
 
 3. Install the dependencies and restart Waybar:
@@ -85,8 +58,9 @@ A customizable, modular Waybar configuration
 #
 
 ### Configuration
+(Section taken from the original README)
 
-<details open>
+<details>
 <summary>Terminal</summary>
 
 If you use a different terminal emulator, replace every instance of `kitty` in the module files.
@@ -171,9 +145,13 @@ For example:
 
 </details>
 
+> [!WARNING]
+> The temperature module required me to tweak the thermal-zone, the default is one, try switching it back if it doesn't show up
+
 #
 
 ### References
+(Section taken from the original README)
 
 - [Waybar wiki](https://github.com/Alexays/Waybar/wiki)
 - [Nerd Fonts wiki: Glyph Sets](https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points)

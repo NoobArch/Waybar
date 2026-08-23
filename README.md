@@ -5,7 +5,7 @@ My config is almost a copy-paste of the [mechabar](https://github.com/Sejjy/Mech
 It also is a lot more neutral, and has more stuff right of the bat, with more explanations as well.
 
 # Preview 
-| ![Preview](./assets/noobarch.png.png) |
+| ![Preview](./assets/noobarch.png) |
 | :---------------------------------------: |
 
 ### Requirements

@@ -1,0 +1,51 @@
+/* Attempt at Nooby's config */
+@define-color rosewater      #f5e0dc;
+@define-color flamingo       #f2cdcd;
+@define-color pink           #f5c2e7;
+@define-color mauve          #cba6f7;
+@define-color red            #f38ba8;
+@define-color maroon         #eba0ac;
+@define-color peach          #fab387;
+@define-color yellow         #f9e2af;
+@define-color green          #a6e3a1;
+@define-color teal           #94e2d5;
+@define-color sky            #89dceb;
+@define-color sapphire       #74c7ec;
+@define-color blue           #89b4fa;
+@define-color lavender       #b4befe;
+@define-color text           #ddffdd;
+@define-color subtext1       #bafec2;
+@define-color subtext0       #a6e8ad;
+@define-color overlay2       #93ff99;
+@define-color overlay1       #7fec84;
+@define-color overlay0       #6cd670;
+@define-color surface2       #58c05b;
+@define-color surface1       #45aa47;
+@define-color surface0       #319432;
+@define-color base           #1e7e1e;
+@define-color mantle         #186518;
+@define-color crust          #050505;
+
+/* Main colors */
+@define-color accent       @green;
+@define-color bg-0         @crust;
+@define-color bg-1         @mantle;
+@define-color bg-2         @base;
+@define-color bg-3         @surface0;
+@define-color fg           @text;
+@define-color br           @subtext0;
+@define-color shadow       shade(@bg-0, 0.75);
+
+/* States */
+@define-color warning      @yellow;
+@define-color critical     @red;
+@define-color charging     @green;
+@define-color hover-bg     @base;
+@define-color hover-fg     alpha(@fg, 0.75);
+
+/*
+	br - border
+	bg - background
+	fg - foreground
+*/
+

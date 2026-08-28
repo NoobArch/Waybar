@@ -5,10 +5,10 @@
 	"width": 0,
 	"height": 0,
 	// "margin": 0,
-	"margin-left": 10,
-	"margin-top": 5,
-	"margin-right": 10,
-	"margin-bottom": -5,
+	"margin-left": 0,
+	"margin-top": 0,
+	"margin-right": 0,
+	"margin-bottom": 0,
 	"spacing": 0,
 	"reload_style_on_change": true,
 
@@ -24,13 +24,12 @@
 
 		"custom/left#bg-1",
 		"hyprland/workspaces",
-		"custom/right#bg-1",
+		"custom/right#bg-1"
 
-		"mpris"
+		// "mpris"
 	],
 
 	"modules-center": [
-		//Left
 		// "hyprland/language",
 
 		"custom/left#bg-1",
@@ -59,11 +58,10 @@
 		"bluetooth",
 		"custom/update",
 		"custom/right#bg-1"
-		//Right
 	],
 
 	"modules-right": [
-		"hyprland/window",
+		// "hyprland/window",
 
 		"custom/left#bg-1",
 		"pulseaudio#input",

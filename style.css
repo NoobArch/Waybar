@@ -14,7 +14,6 @@
 
 #waybar {
 	background-color: @shadow;
-	border-radius: 20px;
 }
 #waybar > box {
 	margin: 5px;
@@ -24,7 +23,7 @@
 /* Vertically align modules */
 .module {
 	margin-top: 3px;
-	margin-bottom: 3px;
+	margin-bottom: 6px;
 }
 
 button {
@@ -52,16 +51,16 @@ tooltip label {
 @import "styles/modules.css";
 @import "styles/states.css";
 
-/* Experimentation */
+/* Rearranged */
 #custom-right.bg-1 {
-    margin-right: 35px;
+    margin-right: 25px;
 }
 
 #custom-left.bg-1 {
-    margin-left: 75px;
+    margin-left: 55px;
 }
 
 #custom-right.bg-4 {
-    margin-right: 75px;
+    margin-right: 55px;
 }
 

@@ -1,66 +1,490 @@
-/* Ignore GTK theme
- * https://github.com/Alexays/Waybar/issues/1351
- */
-* { all: initial; }
-
-@import "styles/fonts/commit-mono-nerd.css";
-@import "styles/themes/NoobArch.css";
-
 * {
-	font-size: 18px;
+	border: none;
+	border-radius: 10;
+	font-family: "CommitMono Nerd Font" ;
 	font-weight: bold;
-	color: @fg;
+	font-size: 16px;
+	min-height: 10px;
+}
+window#waybar {
+	background: transparent;
+}
+#network {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 13px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#custom-timer {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#temperature {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#bluetooth {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#keyboard-state{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;    
+}
+#keyboard-state:hover{
+    border-color: #11221C;
+    color: #11221C; 
+    background: #39EF46;
+}
+#network:hover { 
+    border-color: #11221C;
+    color: #11221C;
+    background: #39EF46;
+}
+#custom-keybinds {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #E4FEE5;
+    background: #11221C;
+    transition: 0.3s;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+}
+#custom-keybinds:hover { 
+    border-color: #11221C;
+    background: #39EF46;
+    color: #11221C;
+}
+#cava{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s; 
+}
+#cava:hover{
+    border-color: #11221C;
+    color: #11221C;
+    background: #39EF46;
+}
+#battery{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#battery:hover{
+    border-color: #11221C;
+    color: #11221C;
+    border-color: #11221C;
+    background: #39EF46;
+}
+#backlight:hover{
+    border-color: #11221C;
+    color: #11221C;
+    background: #39EF46;
+}
+#backlight{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s; 
 }
 
-#waybar {
-	background-color: @shadow;
+
+#language{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
 }
-#waybar > box {
-	margin: 5px;
-	background-color: @bg-0;
+#language:hover{
+    border-color: #11221C;
+    color: #11221C; 
+    background: #39EF46; 
+}
+#pulseaudio {
+}
+#pulseaudio.input {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    padding: 8px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#pulseaudio.output {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    padding: 8px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#pulseaudio:hover{ 
+    border-color: #11221C;
+    background: #39EF46;
+    color: #11221C;
+}
+#pulseaudio.muted {
+    color: #E4FEE5;
+    background: #11221C; 
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#pulseaudio.muted:hover {
+    border-color: #11221C;
+    background: #39EF46;
+    color: #11221C; 
+
+}
+#clock {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#clock:hover {
+    border-color: #11221C;
+    color: #11221C; 
+    background: #39EF46;
+}
+#disk{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#disk:hover{
+    border-color: #11221C;
+    color: #11221C; 
+    background: #39EF46;
+}
+#privacy{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#idle_inhibitor{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#idle_inhibitor.activated{
+    color: #E4FEE5;
+    border-color: #39EF46;
+}
+#idle_inhibitor.activated:hover{
+    background: #39EF46;
+    color: #11221C;
+    border-color: #39EF46;
+}
+#idle_inhibitor.deactivated{
+    color: #E4FEE5
+}
+#idle_inhibitor.deactivated:hover{
+    border-color: #11221C;
+    color: #11221C; 
+    background: #39EF46;
+}
+#memory {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#memory:hover { 
+    border-color: #11221C;
+    color: #11221C; 
+    background: #39EF46;
+
+}
+#cpu {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#cpu:hover {
+    border-color: #11221C;
+    color: #11221C; 
+    background: #39EF46;
+
+}
+#custom-launcher {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 10px;
+    transition: none;
+    color: #E4FEE5;
+    background: #11221C;
+    transition: 0.3s;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+}
+#custom-launcher:hover { 
+    border-color: #11221C;
+    background: #39EF46;
+    color: #11221C;
+}
+#network.disconnected {
+    color: #E4FEE5;
+    background: #11221C; 
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+}
+#network.disconnected:hover {
+    border-color: #11221C;
+    background: #39EF46;
+    color: #11221C; 
+}
+#custom-power {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
+}
+#custom-power:hover {
+    background: #39EF46;
+    color: #11221C;
+    border-color: #39EF46;
+
+}
+#workspaces {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-right: 4px;
+    background: #11221C; 
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    color: #E4FEE5;
+    transition: 0.3s;
 }
 
-/* Vertically align modules */
-.module {
-	margin-top: 3px;
-	margin-bottom: 6px;
+#workspaces button {
+    color: #E4FEE5;
+    transition: 0.3s;
 }
-
-button {
-	border-radius: 16px;
-	padding: 0 10px;
-	min-width: 16px;
+#workspaces button:hover {
+    border-color: #11221C;
+    background: transparent;
+    color: transparent;
+    box-shadow: none;
+    text-shadow: none;
 }
-button:hover {
-	background-color: @hover-bg;
-	color: @hover-fg;
+#tray{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
 }
-
-tooltip {
-	border: 2px solid @br;
-	background-color: @bg-0;
+#tray menu{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: #11221C; 
+    color: #E4FEE5;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #39EF46;
+    transition: 0.3s;
 }
-tooltip > box {
-	padding: 0 6px;
-}
-tooltip label {
-	font-weight: normal;
-}
-
-@import "styles/dividers.css";
-@import "styles/modules.css";
-@import "styles/states.css";
-
-/* Rearranged */
-#custom-right.bg-1 {
-    margin-right: 25px;
-}
-
-#custom-left.bg-1 {
-    margin-left: 55px;
-}
-
-#custom-right.bg-4 {
-    margin-right: 55px;
-}
-

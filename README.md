@@ -1,19 +1,12 @@
+# NoobArch Waybar config
 
-## Waybar config
-
-My config is almost a copy-paste of the [mechabar](https://github.com/Sejjy/MechaBar) repository, make sure to check it if you are encounetering any issues !\
-It also is a lot more neutral, and has more stuff right of the bat, with more explanations as well.
+My config is an amalgamation of several repos (ordered) : [anonymous-red/waybar](https://github.com/sansroot/hypr-dots/tree/anonymous-red/waybar), [mechabar](https://github.com/Sejjy/MechaBar), and [waybar-pomodoro-timer](https://github.com/niraletter/waybar-pomodoro-timer). Make sure to check them out !\
 
 # Preview 
-| ![Preview](./assets/noobarch.png) |
+| ![Preview](./assets/noobarch_waybar.png) |
 | :---------------------------------------: |
 
-### Requirements
-
-The only difference with the original regarding this part is that I swapped all occurences of kitty with Ghostty, [as per the original README explained](#configuration).
-
-### Installation
-(Section taken from the original README)
+## Installation
 
 1. Back up your current Waybar configuration:
 
@@ -27,14 +20,9 @@ The only difference with the original regarding this part is that I swapped all 
 	git clone https://github.com/NoobArch/Waybar.git ~/.config/waybar
 	```
 
-3. Install the dependencies and restart Waybar:
-
-	```bash
-	~/.config/waybar/install
-	```
-
+3. Dependencies : 
 	<details>
-	<summary>Dependencies (7)</summary>
+	<summary>Dependencies (6)</summary>
 
 	| Package                 | Command         | Description                                                                    |
 	| ----------------------  | --------------- | ------------------------------------------------------------------------------ |
@@ -45,113 +33,9 @@ The only difference with the original regarding this part is that I swapped all 
 	| `networkmanager`        | `nmcli`         | Network connection manager and user applications<tr></tr>                      |
 	| `pacman-contrib`        | `checkupdates`  | Contributed scripts and tools for pacman systems                               |
 
-    Optional:
-
-	| Package                | Description                                                                    |
-	| ---------------------- | ------------------------------------------------------------------------------ |
-	| `otf-commit-mono-nerd` | Patched font Commit Mono from nerd fonts library                               |
-
-	> If you prefer a different font, see the [Configuration](#configuration) section below.
-
 	</details>
 
-#
-
-### Configuration
-(Section taken from the original README)
-
-<details>
-<summary>Terminal</summary>
-
-If you use a different terminal emulator, replace every instance of `kitty` in the module files.
-For example:
-
-```jsonc
-// ~/.config/waybar/modules/custom/power.jsonc
-
-"custom/power": {
-	// "on-click": "kitty -e ~/.config/waybar/scripts/power",
-	"on-click": "ghostty -e ~/.config/waybar/scripts/power",
-}
-```
-
-#
-
-</details>
-
-<details>
-<summary>Fonts</summary>
-
-Different fonts render characters in different sizes, which can affect the layout.
-Import your preferred font file from the [fonts](./styles/fonts/) directory to `style.css`.
-For example:
-
-```css
-/* @import "styles/fonts/commit-mono.css"; */
-@import "styles/fonts/jetbrains-mono.css";
-```
-
-#
-
-</details>
-
-<details>
-<summary>Themes</summary>
-
-To change the theme, import your preferred theme file from the [themes](./styles/themes/) directory to `style.css`.
-For example:
-
-```css
-/* @import "styles/themes/catppuccin-mocha.css"; */
-@import "styles/themes/catppuccin-latte.css";
-```
-
-#
-
-</details>
-
-<details>
-<summary>Icons</summary>
-
-You can search for icons on [Nerd Fonts: Cheat Sheet ↗](https://www.nerdfonts.com/cheat-sheet).
-For example:
-
-```
-gentoo
-```
-
-_Matches: `nf-dev-gentoo`, `nf-linux-gentoo`, `nf-md-gentoo`*_
-
-_*Most modules use Material Design Icons (`nf-md-*`) for consistency._
-
-#
-
-</details>
-
-<details>
-<summary>Custom module</summary>
-
-The leftmost module has no default function and is left for you to configure.
-For example:
-
-```jsonc
-// ~/.config/waybar/modules/custom/user.jsonc
-
-"custom/user": {
-	"on-click": "/path/to/your/script", // Run your own script
-	"on-click-right": "pkill -SIGUSR2 waybar", // Restart Waybar
-}
-```
-
-</details>
-
-> [!WARNING]
-> The temperature module required me to tweak the thermal-zone, the default is one, try switching it back if it doesn't show up
-
-#
-
-### References
-(Section taken from the original README)
-
-- [Waybar wiki](https://github.com/Alexays/Waybar/wiki)
-- [Nerd Fonts wiki: Glyph Sets](https://github.com/ryanoasis/nerd-fonts/wiki/Glyph-Sets-and-Code-Points)
+## Credits 
+I took the general aspect of [anonymous-red/waybar](https://github.com/sansroot/hypr-dots/tree/anonymous-red/waybar), changed it's colors to match my config, swapped the places of some modules, added the networkmodule, and made some other minor CSS tweaks. \
+Then added the bluetooth, pulseaudio, backlight and temperature of [mechabar](https://github.com/Sejjy/MechaBar).
+Finally, added the [waybar-pomodoro-timer](https://github.com/niraletter/waybar-pomodoro-timer).

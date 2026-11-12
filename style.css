@@ -233,9 +233,6 @@ window#waybar {
     transition: 0.3s;
 }
 #pulseaudio:hover{ 
-    border-color: #11221C;
-    background: #39EF46;
-    color: #11221C;
 }
 #pulseaudio.muted {
     color: #E4FEE5;
